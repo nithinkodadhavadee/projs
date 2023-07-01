@@ -1,0 +1,34 @@
+<div class="container-fluid container-fluid-custom pb-5 mb-5">
+
+    <div class="row">
+      <table>
+        <% if(searchResults != '') { %>
+          <% searchResults.forEach(function (note, index) { %>
+            
+            <tr>
+
+              <td>
+                <a href="/admin/notes/<%= note._id %>">
+                <h4><%= note.firstName %> <%= note.lastName %></h4>
+                </a>
+              </td>
+
+              <td>
+                <a href="/deleteUser/<%= note._id %>">
+                  <button class="btn btn-danger me-2">Delete <%= note.firstName %></button>
+                </a>
+              </td>
+            </tr>
+    
+          <% }) %>
+        <% } else { %>
+          <p>No items found.</p>
+        <% } %>
+    
+
+
+      </table>
+    </div>
+  
+  </div>
+  
