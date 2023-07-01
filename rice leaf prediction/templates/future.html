@@ -1,0 +1,57 @@
+ <html>
+<head>
+<style>
+ 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+ .button {
+  background-color: #0000FF; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+ 
+</style>
+</head>
+<body>
+
+<div>
+  <h1>Conclusion and Future Work</h1>
+  <p>In this paper we have proposed a deep learning architecture
+with training on 1509 images of rice leaves and testing on
+different 647 images and that correctly classifies 92.46% of the
+test images. Transfer Learning using fine-tuning the predefined
+VGGNet has greatly improved the performance of the model
+which otherwise did not produce satisfactory results on such
+small dataset. The number of epochs used was stopped at 25
+because we had received a cut point after which the accuracy
+was not improving and the loss was not decreasing on both
+training and validation data.
+In future work, we would like to collect more images from
+agricultural fields and Agricultural Research institutes so that
+we can improve the accuracy further. We would like to add
+cross-validation process in future in order to validate our results. We would also like to use better deep learning models
+and other state-of the art works and compare it with the results
+obtained. The developed model can be used in future to detect
+other plant leaf diseases, which are important crops in India. </P>
+ 
+  
+</div>
+ <input type="button" class="button" onclick="window.location.href='{{url_for('index')}}';" value="HOME" />
+</body>
+</html>

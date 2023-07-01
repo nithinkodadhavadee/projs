@@ -1,0 +1,53 @@
+ <html>
+<head>
+<style>
+ 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+}
+
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
+ .button {
+  background-color: #0000FF; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+  
+</style>
+</head>
+<body>
+
+<div>
+  <h1>Abstract</h1>
+  <p>Rice is one of the major cultivated crops in India
+which is affected by various diseases at various stages of its
+cultivation. It is very difficult for the farmers to manually
+identify these diseases accurately with their limited knowledge.
+Recent developments in Deep Learning show that Automatic
+Image Recognition systems using Convolutional Neural Network
+(CNN) models can be very beneficial in such problems. Since rice
+leaf disease image dataset is not easily available, we have created
+our own dataset which is small in size hence we have used
+Transfer Learning to develop our deep learning model. The
+proposed CNN architecture is based on VGG-16 and is trained
+and tested on the dataset collected from rice fields and the
+internet. The accuracy of the proposed model is 92.46%
+ </P>
+  
+</div>
+ <input type="button" class= "button"onclick="window.location.href='{{url_for('first')}}';" value="NEXT" />
+</body>
+</html>
